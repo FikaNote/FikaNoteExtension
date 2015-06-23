@@ -70,7 +70,7 @@ function postCurrentUrl(currentUrl, callback, errorCallback) {
     var response = x.response;
     if (!response || !response.responseData || !response.responseData.results ||
         response.responseData.results.length === 0) {
-      errorCallback('No response from Google Image search!');
+      errorCallback('No response from Server!');
       return;
     }
     var firstResult = response.responseData.results[0];
